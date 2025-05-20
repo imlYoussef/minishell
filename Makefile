@@ -6,7 +6,7 @@
 #    By: ymazoz <ymazoz@student.1337.ma>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/20 19:01:00 by ymazoz            #+#    #+#              #
-#    Updated: 2025/05/20 19:02:38 by ymazoz           ###   ########.fr        #
+#    Updated: 2025/05/20 19:41:14 by ymazoz           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -73,7 +73,7 @@ LIB_PATH	:= -L$(PARSER_DIR) \
 
 
 
-LIB_FLAGS	:=  -lparser -lft -llist
+LIB_FLAGS	:=  -lparser -lft -llist -lreadline
 
 
 all: $(NAME)

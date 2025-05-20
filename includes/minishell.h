@@ -6,7 +6,7 @@
 /*   By: ymazoz <ymazoz@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/05 19:33:11 by ysemlali          #+#    #+#             */
-/*   Updated: 2025/05/20 19:12:48 by ymazoz           ###   ########.fr       */
+/*   Updated: 2025/05/20 19:48:25 by ymazoz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,15 @@
 # include <stdlib.h>
 # include <sys/stat.h>
 # include <sys/types.h>
+# include <sys/wait.h>
 # include <unistd.h>
+# include <fcntl.h>
+# include <stddef.h>
+# include <signal.h>
+# include <termios.h>
+# include <string.h>
+
+
 
 typedef struct s_data
 {

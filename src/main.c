@@ -14,6 +14,8 @@ int	main(int ac, char **av, char **env)
 	printf_hello_world_parser();
 	// test case for list library
 	printf("This is a test case for list library : %d\n", list_length(NULL));
+	// test readline library
+	parse();
 
 	return (0);
 }

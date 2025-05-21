@@ -2,7 +2,7 @@
 #include <stddef.h>
 #include <stdlib.h>
 
-void	list_free(void **list, void (*f)())
+void	list_free(void **list, void (*f)(void *))
 {
 	t_list	*next;
 	t_list	*current;

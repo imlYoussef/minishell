@@ -6,7 +6,7 @@
 #    By: ymazoz <ymazoz@student.1337.ma>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/20 19:01:00 by ymazoz            #+#    #+#              #
-#    Updated: 2025/05/20 19:41:14 by ymazoz           ###   ########.fr        #
+#    Updated: 2025/05/21 20:41:26 by ymazoz           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -131,10 +131,7 @@ sanitize: fclean all
 
 valgrind: CFLAGS += -g
 valgrind: fclean all
-	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./$(NAME) $(SCENE)
-
-yusuf: all
-	./$(NAME) $(SCENE_DIR)/mandatory_tester_scene.rt
+	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --track-fds=yes ./$(NAME)
 
 
 .PHONY: all clean fclean re sanitize valgrind

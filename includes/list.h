@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   list.h                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: souahidi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ymazoz <ymazoz@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/02 00:35:24 by souahidi          #+#    #+#             */
-/*   Updated: 2025/01/22 16:02:37 by souahidi         ###   ########.fr       */
+/*   Updated: 2025/05/21 21:02:01 by ymazoz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,8 @@ int					list_length(void *list);
 void				*list_at(void *list, int index);
 void				*list_tail(void *list);
 
-void				list_free(void **list, void (*f)());
+
+void				list_free(void **list, void (*f)(void *));
 
 void				list_insert(void **list, void *node);
 void				*list_shift(void **list);
